@@ -1,6 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-This project is a demo to practice and demonstrate my skills with NextJS, Typescript, Tailwind and more
-The project is currently a WIP
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). This project is a demo to practice and demonstrate my skills with NextJS, Typescript, Tailwind and more. The project is currently a WIP
 
 ## Getting Started
 

@@ -61,7 +61,7 @@ const images = [
                 key={`carousel-img-${index + 1}`} 
                 className="item" 
                 style={{
-                  transform:`rotateY(calc(${index} * (360 / ${images.length}) * 1deg)) translateZ(350px)`,
+                  transform:`rotateY(calc(${index} * (360 / ${images.length}) * 1deg)) translateZ(var(--zDistance))`,
                 }}
               >
                 <Image src={image.src} alt={image.alt} width={image.width} height={image.height} />

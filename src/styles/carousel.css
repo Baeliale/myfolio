@@ -6,6 +6,7 @@
   position: relative;
   --perspective: 1000px;
   --rotateX: -10deg;
+  --zDistance: min(350px, 40vw);
 }
 
 .banner .slider {

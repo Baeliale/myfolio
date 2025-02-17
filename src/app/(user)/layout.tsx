@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Pacifico } from "next/font/google";
+import { Inter, Nunito_Sans, Pacifico } from "next/font/google";
 import "./globals.css";
 import { Topbar } from "@/components/layout/topbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const sans = Inter({
+  variable: "--font-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const heading = Nunito_Sans({
+  variable: "--font-heading",
   subsets: ["latin"],
-});
+})
 
 const pacifico = Pacifico({
   variable: "--font-pacifico",
@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${pacifico.variable} antialiased bg-background`}
+        className={`${sans.variable} ${heading.variable} ${pacifico.variable} antialiased bg-background`}
       >
         <Topbar />
         {children}

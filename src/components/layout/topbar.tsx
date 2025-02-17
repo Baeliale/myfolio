@@ -10,7 +10,7 @@ export const Topbar = () => {
       <div className={"w-app desktop:w-full mx-auto flex justify-center h-full color-light"}>
         <Image className={"w-auto mr-auto"} src={Logo.src} alt={"The text MyFolio with a blue gradient and some swirls in front of it with the same blue gradient"} width={400} height={200} />
         <TextField type="text" placeholder="search" icon={faSearch} />
-        <Button className="ml-auto" variant="tertiary">Login</Button>
+        <Button className="ml-auto" variant="primary">Login</Button>
       </div>
     </header>   
   )

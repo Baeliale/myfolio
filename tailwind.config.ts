@@ -33,6 +33,7 @@ export default {
       },
       fontFamily: {
         pacifico: "var(--font-pacifico)",
+        sans: "var(--font-sans)",
         mono: ['monospace'],
       },
     },

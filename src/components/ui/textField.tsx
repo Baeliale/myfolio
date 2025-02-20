@@ -2,7 +2,7 @@ import { InputHTMLAttributes } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { IconProp } from "@fortawesome/fontawesome-svg-core"
 
-interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
+export interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
   icon?: IconProp,
   iconPlacement?: "left" | "right"
 }

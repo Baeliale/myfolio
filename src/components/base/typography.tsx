@@ -3,8 +3,8 @@ import { cls } from "@/utils/functions"
 import { cva } from "class-variance-authority"
 
 interface TypographyProps extends React.HTMLAttributes<HTMLParagraphElement> {
-  tag: TagTypes
-  variant: TypographyVariantsType
+  tag?: TagTypes
+  variant?: TypographyVariantsType
   color?: string
   link?: boolean
 }
@@ -30,7 +30,7 @@ const TypographyStyles = cva(
   }
 )
 
-export const Typography = ({tag, variant, link, color, className, children}: TypographyProps) => {
+export const Typography = ({tag = "span", variant = "body", link, color, className, children}: TypographyProps) => {
   const Component = tag
 
   return (
@@ -39,7 +39,7 @@ export const Typography = ({tag, variant, link, color, className, children}: Typ
       className: cls([
         className,
         link,
-        color && `text-${color}`
+        color ? `text-${color}` : "text-light",
       ]),
     })}>
       {children}

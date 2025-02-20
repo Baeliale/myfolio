@@ -26,6 +26,10 @@ export default {
         appLg: "1200px",
         app: "90%",
       },
+      maxWidth: {
+        appLg: "1200px",
+        app: "90%",
+      },
       screens: {
         desktop: "1280px",
         laptop: "769px",
